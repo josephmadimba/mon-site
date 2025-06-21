@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="fixed">
+        <header>
+           <h1 class="logo">Mæd-Tech</h1>
+           <i class="bx bx-menu" id="menu-icon"></i>
+            <nav class="navbar">
+                <ul>
+                   <li><a href="van.html">Accueil</a></li>
+                   <li><a href="produits.html">Produits</a></li>
+                   <li><a href="A_propos.html">A propos_de_nous</a></li>
+                   <li><a href="contact.html"><i class='bx bxs-user'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <section class="dollars">
+        <div class="dollars-content">
+            <h2>Bienvenue chez Mæd Tech</h2>
+            <p>Découvrez nos meilleurs offres sur les ordinateurs, téléphones, casques et plus encore !</p>
+            <a href="Produits.html" class="button">Découvrir</a>
+        </div>
+    </section>
+    <section id="produits" class="section-produits">
+        <h2>Nos produits</h2>
+        <div class="produits-container">
+            <div class="produit">
+                <img src="pc-portable-lenovo-ideapad-slim-3-15amn8-sans-wi.jpg" alt="produit 1">
+                <h3>Lenovo ideapad</h3>
+                <p>450$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="iphone-15-plus-256gb-vert.jpg" alt="produit 1">
+                <h3>Iphone 15</h3>
+                <p>900$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="apple-iphone-16-pro-max-256gb-black-titanium (1).jpg" alt="produit 1">
+                <h3>Iphne 16 pro max</h3>
+                <p>1200$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="samsung-galaxy-s25-ultra-ai-smartphone-512-go-gris.jpg" alt="produit 1">
+                <h3>Samsung s25 512</h3>
+                <p>340$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="samsung-galaxy-z-flip6-smartphone-512-go-gris.jpg" alt="produit 1">
+                <h3>samsung Z-flip6</h3>
+                <p>550$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="1-6-768x768.jpg" alt="produit 1">
+                <h3>Google pixel 7a</h3>
+                <p>330$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="71Eqm3ag-OL._AC_SR345,345_.jpg" alt="produit 1">
+                <h3>Levirtu Tablette</h3>
+                <p>380$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+            <div class="produit">
+                <img src="smartphone-vivo-y76-5g-bleu-ram-8go-rom-256go-nfc.jpg" alt="produit 1">
+                <h3>Vivo y76</h3>
+                <p>210$</p>
+                <button>ajouter Au Panier</button>
+            </div>
+        
+        </div>
+    </section>
+    
+    
+    <section id="contact" class="section-contact">
+        <h2>Contactez-nous</h2>
+        <form>
+            <input type="text" placeholder="Votre nom"><br>
+            <input type="number" placeholder="votre number"><br>
+            <input type="email" placeholder="Votre Email"><br>
+            <textarea placeholder="Votre meessage" required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+    
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navbar = document.querySelector('.navbar');
+        menuIcon.addEventListener('click', () => {
+            navbar.classList.toggle('show');
+        });
+    </script>
+
+    <footer>
+    <div class="footer-content">
+        <h2>Joseph Mæd</h2>
+        <p>Contactez-moi : josephmadimba109@.com <br>+243 842 510 263</p>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/votreprofil" target="_blank">LinkedIn</a>
+            <a href="https://github.com/josephmadimba" target="_blank">GitHub</a>
+            <a href="https://twitter.com/joseph Madimba" target="_blank">Twitter</a>
+            <a href="https://www.facebook.com/Le roi josephat" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/joseph madimba" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/josephmad61" target="_blank">TikTok</a>
+        </div>
+    </div>
+   <div class="footer-bottom">
+        <p>&copy; 2025 Joseph Mæd. A votre service.</p>
+    </div>
+</footer>
+</body>
+</html>

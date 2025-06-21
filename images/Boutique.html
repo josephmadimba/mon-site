@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma Boutique</title>
+    <link rel="stylesheet" href="style boutique.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="#Accueil">Accueil</a></li>
+      <li><a href="#produits">produits</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="apropos" class="about"> 
+  </section>
+  <section id="competences" class="skills"> <Compétences>
+  </section>
+  <section id="contact" class="contact-card"> <Contact>
+  </section>        
+    <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+        <a href="produits.html"><i class="fas fa-box-open"></i> Produits</a>
+        <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+        <a href="panier.html"><i class="fas fa-shopping-cart"></i> Panier</a>
+    </nav>
+      <header class="accueil">
+        <h1>Bienvenue sur Ma Boutique</h1>
+        <p>Découvrez nos produits de qualité au meilleur prix.</p>
+        <script>
+            function ajouterAuPanier(produit) {
+              alert(produit + " a été ajouté au panier.");
+              // Ici, vous pouvez ajouter le code pour stocker le produit dans le panier
+            }
+          </script>
+    <main class="produits">
+        <div class="produit">
+          <img src="mad (4).jpg" alt="Ordinateur">
+          <h2>Ordinateur HP</h2>
+          <p>450</p>
+          <button onclick="ajouterAuPanier('Ordinateur HP')">Ajouter au panier</button>
+        </div>
+        <div class="produit">
+          <img src="jo (1).jpg" alt="Téléphone">
+          <h2>Téléphone Samsung</h2>
+          <p>300</p>
+          <button onclick="ajouterAuPanier('Téléphone Samsung')">Ajouter au panier</button>
+        </div>
+        <div class="produit">
+          <img src="mad (1).jpg" alt="Tablette">
+          <h2>Tablette Lenovo</h2>
+          <p>250</p>
+          <button onclick="ajouterAuPanier('Tablette Lenovo')">Ajouter au panier</button>
+        </div>
+        <div class="produit">
+          <img src="IMG-20240212-WA0048.jpg" alt="Casque audio">
+          <h2>Casque JBL</h2>
+          <p>75</p>
+          <button onclick="ajouterAuPanier('Casque JBL')">Ajouter au panier</button>
+        </div>
+    </main>
+</nav>
+<main class="contact">
+  <h1>Contactez-nous</h1>
+  <div class="contact-info">
+    <div>
+      <i class="fas fa-phone"></i>
+      <p>‪+243 842 510 263‬</p>
+    </div>
+    <div>
+      <i class="fab fa-whatsapp"></i>
+      <p><a href="https://wa.me/243842510263">Envoyer un message</a></p>
+    </div>
+    <div>
+      <i class="fas fa-envelope"></i>
+      <p>josephmadimba109@gmail.com</p>
+    </div>
+    <div>
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Kinshasa, RD Congo</p>
+    </div>
+  </div>
+  <form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="TA_CLÉ_WEB3FORMS">
+    <input type="text" name="name" placeholder="Votre nom" required>
+    <input type="email" name="email" placeholder="Votre email" required>
+  </form>
+        
+      
+</body>
+</html>

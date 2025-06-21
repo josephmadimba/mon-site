@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produit</title>
+    <link rel="stylesheet" href="produits.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    
+    <div class="fixed">
+        <header>
+           <h1 class="logo">Tech-Mad</h1>
+            <nav class="navbar">
+                <ul>
+                   <li><a href="van.html"><i class='bx bxs-home-alt-2'></i>Accueil</a></li>
+                   <li><a href="produits.html"><i class='bx bx-store'></i>Produits</a></li>
+                   <li><a href="A_propos.html">A propos_de_nous</a></li>
+                   <li><a href="contact.html"><i class='bx bxs-user'></i></a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    
+
+
+    <!-- affaire l'ia -->
+    
+    <h2 class="descent-prooduit-headear">Nos Produits</h2>
+    
+
+    <div class="panier-icon" onclick="afficherPanier()">
+        <i class='bx bxs-cart'></i> (<span id="count">0</span>)
+    </div>
+
+    <div class="produits" id="produits-container">
+        <div class="produit" data-id="1" data-nom="iphone 16 pro max" data-prix="1200">
+            <div class="image-container">
+                <img src="apple-iphone-16-pro-max-256gb-black-titanium.jpg" alt="Produit 1" class="produit-img" data-images="apple-iphone-16-pro-max-256gb-black-titanium.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>iphone 16 pro max</h3>
+            <p>1200$</p>
+            <button onclick="ajouterAuPanier(1)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="2" data-nom="Iphone 15" data-prix="900">
+            <div class="image-container">
+                <img src="iphone-15-plus-128gb-bleu.jpg" alt="Produit 2" class="produit-img" data-images="img2a.jpg,img2b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Iphone 15</h3>
+            <p>900$</p>
+            <button onclick="ajouterAuPanier(2)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="3" data-nom="Iphone 5 simple" data-prix="195">
+            <div class="image-container">
+                <img src="iphone-5-s-32GB_2nd.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Iphone 5 simple</h3>
+            <p>195$</p>
+            <button onclick="ajouterAuPanier(3)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="4" data-nom="iphone X" data-prix="300.00">
+            <div class="image-container">
+                <img src="iPhone_X_family-2.png" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>iPhone_X</h3>
+            <p>300.00$</p>
+            <button onclick="ajouterAuPanier(4)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="5" data-nom="Casque Audio" data-prix="370.00">
+            <div class="image-container">
+                <img src="Apple_iphone_11-rosette-family-lineup-091019_big.jpg.large.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Iphone 11</h3>
+            <p>370.00$</p>
+            <button onclick="ajouterAuPanier(5)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="6" data-nom="samsung S25" data-prix="310.00">
+            <div class="image-container">
+                <img src="s25-600_600-yellow.png" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung S25</h3>
+            <p>310.00$</p>
+            <button onclick="ajouterAuPanier(6)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="7" data-nom="oreillette-avec-bluetooth-5-0-et-micro-hd" data-prix="400.05">
+            <div class="image-container">
+                <img src="samsung-coque-avec-s-pen-integre-galaxy-z-fold-4-i.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung z-fold</h3>
+            <p>400.05$</p>
+            <button onclick="ajouterAuPanier(7)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="8" data-nom="Samsung S25 512go" data-prix="340.00">
+            <div class="image-container">
+                <img src="samsung-galaxy-s25-ultra-ai-smartphone-512-go-arge.jpg" alt="Casque Audio" class="produit-img" data-images="1 imag.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung S25 512go</h3>
+            <p>340.00$</p>
+            <button onclick="ajouterAuPanier(8)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="9" data-nom="samsung A35" data-prix="250.00">
+            <div class="image-container">
+                <img src="samsung-galaxy-a35-5g-smartphone-128go-bleu.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>samsung A35</h3>
+            <p>250.00$</p>
+            <button onclick="ajouterAuPanier(9)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="10" data-nom="samsung A25 128go" data-prix="220.00">
+            <div class="image-container">
+                <img src="samsung-galaxy-a25-smartphone-128-go-5g-bleu-nuit.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>samsung A25 128go</h3>
+            <p>220.00$</p>
+            <button onclick="ajouterAuPanier(10)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="11" data-nom="samsung A55" data-prix="350.00">
+            <div class="image-container">
+                <img src="samsung-galaxy-a55-smartphone-128-go-5g-bleu.jpg" alt="Produit 3" class="produit-img" data-images="img3a.jpg,img3b.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>samsung A55</h3>
+            <p>350.00$</p>
+            <button onclick="ajouterAuPanier(11)">Ajouter au panier</button>
+        </div>
+
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="13" data-nom="Samsung Z-flip6" data-prix="500">
+            <div class="image-container">
+                <img src="samsung-galaxy-z-flip6-smartphone-256-go-bleu.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung Z-flip6</h3>
+            <p>500$</p>
+            <button onclick="ajouterAuPanier(13)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="14" data-nom="Samsung Z-flip6 512Go " data-prix="550">
+            <div class="image-container">
+                <img src="samsung-galaxy-z-flip6-smartphone-512-go-gris.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung Z-flip6 512Go </h3>
+            <p>550$</p>
+            <button onclick="ajouterAuPanier(14)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="15" data-nom="Samsung z-fold4" data-prix="800">
+            <div class="image-container">
+                <img src="samsung-galaxy-z-fold4-512go-5g-anthracite.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung Z-fold4</h3>
+            <p>800$</p>
+            <button onclick="ajouterAuPanier(15)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="16" data-nom="Levirtu Tablette" data-prix="380">
+            <div class="image-container">
+                <img src="71Eqm3ag-OL._AC_SR345,345_.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Levirtu Tablette</h3>
+            <p>380$</p>
+            <button onclick="ajouterAuPanier(16)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="17" data-nom="Blackview Tablette" data-prix="300">
+            <div class="image-container">
+                <img src="71fQfCke6-L._AC_SR345,345_.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Blackview Tablette</h3>
+            <p>300$</p>
+            <button onclick="ajouterAuPanier(17)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="18" data-nom="Teclas T64max" data-prix="310">
+            <div class="image-container">
+                <img src="71e57pVevwL._AC_SR345,345_.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Teclas T64max</h3>
+            <p>310$</p>
+            <button onclick="ajouterAuPanier(18)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="19" data-nom="TCL Tabmax" data-prix="315">
+            <div class="image-container">
+                <img src="71tCnSuKZwL._AC_SR345,345_.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>TCL Tabmax</h3>
+            <p>315$</p>
+            <button onclick="ajouterAuPanier(19)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="20" data-nom="UJJ Tablette" data-prix="290">
+            <div class="image-container">
+                <img src="718pCpiFDhL._AC_SR345,345_.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>UJJ Tablette</h3>
+            <p>290$</p>
+            <button onclick="ajouterAuPanier(20)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="21" data-nom="Google pixel 7a" data-prix="330">
+            <div class="image-container">
+                <img src="1-6-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Google pixel 7a</h3>
+            <p>330$</p>
+            <button onclick="ajouterAuPanier(21)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="22" data-nom="Google pixel 7 pro" data-prix="460">
+            <div class="image-container">
+                <img src="1-2-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Google pixel 7 pro</h3>
+            <p>460$</p>
+            <button onclick="ajouterAuPanier(22)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="23" data-nom="Google pixel 6" data-prix="275">
+            <div class="image-container">
+                <img src="0-1-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Google pixel 6</h3>
+            <p>275$</p>
+            <button onclick="ajouterAuPanier(23)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="24" data-nom="Google pixel 9" data-prix="1250">
+            <div class="image-container">
+                <img src="google-pixel-7-128-go-noir.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Google pixel 9</h3>
+            <p>1250$</p>
+            <button onclick="ajouterAuPanier(24)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="25" data-nom="Google pixel 8" data-prix="1200">
+            <div class="image-container">
+                <img src="google-pixel-8a-5g-8go-128-go-bleu-azur-smartphone.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Google pixel 8</h3>
+            <p>1200$</p>
+            <button onclick="ajouterAuPanier(25)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="26" data-nom="Itel P55" data-prix="85">
+            <div class="image-container">
+                <img src="615r2Cqi8WL._SL1500_-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel P55</h3>
+            <p>85$</p>
+            <button onclick="ajouterAuPanier(26)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="27" data-nom="Itel P65" data-prix="110">
+            <div class="image-container">
+                <img src="1-72-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel P65</h3>
+            <p>110$</p>
+            <button onclick="ajouterAuPanier(27)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="28" data-nom="Itel P55" data-prix="165">
+            <div class="image-container">
+                <img src="1-16.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel P55</h3>
+            <p>165$</p>
+            <button onclick="ajouterAuPanier(28)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="29" data-nom="Itel P65C" data-prix="85">
+            <div class="image-container">
+                <img src="1-46-768x768.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel P65C</h3>
+            <p>85$</p>
+            <button onclick="ajouterAuPanier(28)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="29" data-nom="Itel S23+" data-prix="190">
+            <div class="image-container">
+                <img src="1-10-1200x1200.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel S23+</h3>
+            <p>190$</p>
+            <button onclick="ajouterAuPanier(29)">Ajouter au panier</button>
+        </div>
+
+        
+        <div class="produit" data-id="29" data-nom="Itel S24" data-prix="105">
+            <div class="image-container">
+                <img src="1-11.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel S24</h3>
+            <p>105$</p>
+            <button onclick="ajouterAuPanier(29)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="30" data-nom="Itel S25" data-prix="140">
+            <div class="image-container">
+                <img src="1-59.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Itel S25</h3>
+            <p>140$</p>
+            <button onclick="ajouterAuPanier(30)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="31" data-nom="Infinix zéro 20" data-prix="350">
+            <div class="image-container">
+                <img src="5-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix zéro 20</h3>
+            <p>350$</p>
+            <button onclick="ajouterAuPanier(31)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="32" data-nom="Infinix Smart 8" data-prix="100">
+            <div class="image-container">
+                <img src="1-3-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix Smart 8</h3>
+            <p>100$</p>
+            <button onclick="ajouterAuPanier(32)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="33" data-nom="Infinix note 30" data-prix="250">
+            <div class="image-container">
+                <img src="1-6-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix note 30</h3>
+            <p>250$</p>
+            <button onclick="ajouterAuPanier(33)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="34" data-nom="Infinix note 40" data-prix="260">
+            <div class="image-container">
+                <img src="1-30-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix note 40</h3>
+            <p>260$</p>
+            <button onclick="ajouterAuPanier(34)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="35" data-nom="Infinix Hot 40i" data-prix="140">
+            <div class="image-container">
+                <img src="0-5-768x855.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix Hot 40i</h3>
+            <p>140$</p>
+            <button onclick="ajouterAuPanier(35)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="36" data-nom="Infinix Note 12" data-prix="180">
+            <div class="image-container">
+                <img src="1-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix Note 12</h3>
+            <p>180$</p>
+            <button onclick="ajouterAuPanier(36)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="37" data-nom="Infinix Smart 9" data-prix="85">
+            <div class="image-container">
+                <img src="1-107-scaled.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix Smart 9</h3>
+            <p>85$</p>
+            <button onclick="ajouterAuPanier(37)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="38" data-nom="Infinix zéro 40" data-prix="650">
+            <div class="image-container">
+                <img src="1-89-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix zéro 40</h3>
+            <p>650$</p>
+            <button onclick="ajouterAuPanier(38)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="39" data-nom="Infinix zéro Flip" data-prix="890">
+            <div class="image-container">
+                <img src="1-90-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix zéro Flip</h3>
+            <p>890$</p>
+            <button onclick="ajouterAuPanier(39)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="40" data-nom="Infinix zéro 30" data-prix="350">
+            <div class="image-container">
+                <img src="1-36-723x1024.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Infinix zéro 30</h3>
+            <p>350$</p>
+            <button onclick="ajouterAuPanier(40)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="41" data-nom="Vivo V40" data-prix="220">
+            <div class="image-container">
+                <img src="smartphone---vivo-v40-5g.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Vivo v40</h3>
+            <p>220$</p>
+            <button onclick="ajouterAuPanier(41)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="42" data-nom="vivo y28" data-prix="200">
+            <div class="image-container">
+                <img src="smartphone---vivo-y28s-5g.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>vivo y28</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(42)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="43" data-nom="vivo y76" data-prix="210">
+            <div class="image-container">
+                <img src="smartphone-vivo-y76-5g-bleu-ram-8go-rom-256go-nfc.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>vivo y76</h3>
+            <p>210$</p>
+            <button onclick="ajouterAuPanier(43)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="44" data-nom="Oppo reno12" data-prix="300">
+            <div class="image-container">
+                <img src="oppo-reno12-5g-12gb-256gb-noir-brown-black-doubl.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Oppo reno12</h3>
+            <p>300$</p>
+            <button onclick="ajouterAuPanier(44)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="45" data-nom="vivo y79" data-prix="190">
+            <div class="image-container">
+                <img src="vivo-y79a-smartphone-599.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>vivo y79</h3>
+            <p>190$</p>
+            <button onclick="ajouterAuPanier(45)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="46" data-nom="Casque lesxibook" data-prix="20">
+            <div class="image-container">
+                <img src="lexibook-casque-2-en-1-disney-stitch-bluetooth.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Casque lesxibook</h3>
+            <p>20$</p>
+            <button onclick="ajouterAuPanier(46)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="47" data-nom="Ecouteurs intra" data-prix="15">
+            <div class="image-container">
+                <img src="ecouteurs-intra-auriculaires-sans-fil-marshall-min.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Ecouteurs intra</h3>
+            <p>15$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+
+        <div class="produit" data-id="12" data-nom="Samsung A16" data-prix="200">
+            <div class="image-container">
+                <img src="samsung-galaxy-a16-smartphone-128go-bleu-nuit.jpg" alt="Produit 1" class="produit-img" data-images="Souurit.jpg" data-index="0">
+                <!-- <button class="prev-img" onclick="changerImage(this, -1)"></button>
+                <button class="next-img" onclick="changerImage(this, 1)"></button> -->
+            </div>
+            <h3>Samsung A16</h3>
+            <p>200$</p>
+            <button onclick="ajouterAuPanier(12)">Ajouter au panier</button>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal-panier" id="modal">
+        <div class="contenu-panier">
+            <h2>Votre Panier</h2>
+            <div id="items-panier"></div>
+            <p>Total: <span id="total">0.00</span>$</p>
+            <button onclick="fermerPanier()">Fermer</button>
+            <!-- <button onclick="commander()">Commander</button> -->
+             <a href="https://wa.me/243842510263" class="mon--a__shoopping-cart">commander</a>
+        </div>
+    </div>
+
+    <script>
+        let cartItems = [];
+
+        function ajouterAuPanier(id) {
+            id = parseInt(id);
+            const produitElement = document.querySelector(`.produit[data-id="${id}"]`);
+            const nom = produitElement.getAttribute('data-nom');
+            const prix = parseFloat(produitElement.getAttribute('data-prix'));
+            const image = produitElement.querySelector('img').src;
+
+            const existingItem = cartItems.find(item => item.id === id);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cartItems.push({
+                    id: id,
+                    quantity: 1,
+                    price: prix,
+                    image: image,
+                    name: nom
+                });
+            }
+
+            updateCartCount();
+        }
+
+        function updateCartCount() {
+            const totalItems = cartItems.reduce((acc, item) => acc + item.quantity, 0);
+            document.getElementById('count').textContent = totalItems;
+        }
+
+        function afficherPanier() {
+            const modal = document.getElementById('modal');
+            const container = document.getElementById('items-panier');
+            container.innerHTML = '';
+
+            if (cartItems.length === 0) {
+                container.innerHTML = '<p>Votre panier est vide.</p>';
+            } else {
+                cartItems.forEach(item => {
+                    container.innerHTML += `
+                        <div class="item-panier">
+                            <img src="${item.image}" alt="${item.name}">
+                            <div>
+                                <h4>${item.name}</h4>
+                                <p>${item.price.toFixed(2)}$</p>
+                                <div class="quantite">
+                                    <button onclick="changerQuantite(${item.id}, -1)">-</button>
+                                    <span>${item.quantity}</span>
+                                    <button onclick="changerQuantite(${item.id}, 1)">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            const total = cartItems.reduce((acc, item) => acc + item.price * item.quantity, 0);
+            document.getElementById('total').textContent = total.toFixed(2);
+            modal.style.display = 'block';
+        }
+
+        function changerQuantite(id, delta) {
+            const item = cartItems.find(item => item.id === id);
+            if (!item) return;
+
+            item.quantity += delta;
+            if (item.quantity < 1) {
+                cartItems = cartItems.filter(i => i.id !== id);
+            }
+
+            updateCartCount();
+            afficherPanier();
+        }
+
+        function fermerPanier() {
+            document.getElementById('modal').style.display = 'none';
+        }
+
+        function commander() {
+            alert('Commande effectuée !');
+            cartItems = [];
+            updateCartCount();
+            fermerPanier();
+        }
+
+        function changerImage(button, direction) {
+            const container = button.closest(".image-container");
+            const img = container.querySelector("img");
+            const images = img.getAttribute("data-images").split(",");
+            let index = parseInt(img.getAttribute("data-index"));
+
+            index = (index + direction + images.length) % images.length;
+
+            img.setAttribute("data-index", index);
+            img.src = images[index];
+        }
+    </script>
+</body>
+</html>
+
+
+    
+</body>
+</html>

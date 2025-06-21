@@ -1,0 +1,116 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d1b176;
+    color: rgb(248, 248, 248);
+}
+header{
+    background: #d69e25;
+    color: white;
+    text-align: center;
+    /* padding: 20px ; */
+    padding: 5px;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+}
+h1{
+    margin: 0;
+    
+}
+main{
+    padding: 30px;
+    /* margin: 0px; */
+    width: 100%;
+}
+.skills-section{
+    text-align: center;
+    margin-top: 20px;
+    background-color: #d5db98;
+
+    /* display: flex; */
+}
+.Html_CSS{
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+}
+.c__python{
+    display: flex;
+    padding: 20px;
+    margin: 30px;
+}
+.cool{
+    display: flex;
+    /* width: 50px; */
+    word-wrap: break-word;
+    padding: 10px;
+}
+.skills-argument{
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 15px;
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    width: 200px;
+    margin-right: 10px;
+}
+.mots{
+    background: #0a0a0a;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 20px;
+    color: aquamarine;
+    
+}
+.skills-container{
+    text-align: center;
+    margin-top: 40px;
+    display: grid;
+    grid-template-areas: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 400px;
+    margin: auto;
+}
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20Px;
+}
+.skill{
+    background-color: #d89d2f;
+    color: #222220;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    font-weight: bold;
+    box-shadow: 0 0 10Px rgba(0, 0, 0, 0.2);
+    /* background: #fff; */
+    /* border-radius: 10px; */
+    /* box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    margin: 15px;
+    padding: 20Px;
+    width: 150px;
+    position: relative;
+    /* justify-content: space-between; */
+}
+.skill h3{
+    margin: 0;
+    font-size: 1.5em;
+}
+.skill:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+footer{
+    text-align: center;
+    padding: 10px 0;
+    background: #4a90e2;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

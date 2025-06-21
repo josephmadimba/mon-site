@@ -1,0 +1,66 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(modern-smartphone-with-live-abstract-wallpaper-coming-out-screen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.conctact-form{
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+}
+.conctact-form h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.conctact-form label{
+    display: block;
+    margin-bottom: 10px;
+}
+.conctact-form input,
+.conctact-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.conctact-form textarea{
+    height: 100px;
+}
+.conctact-form button{
+    background-color: #c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    text-emphasis: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.623);
+}
+.conctact-form button:hover{
+    background-color: #b00; /* couleur du survol */
+    transform: scale(1.05); /*zome du button*/
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.856); /*ombre sur le button*/
+}
+@media (max-width: 767){
+    boby {
+        padding: 20px;
+    }
+    .conctact-form{
+        padding: 20px;
+    }
+}

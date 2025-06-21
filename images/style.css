@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #000000;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ff0000;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header{
+    background-color: #1e3a5f;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 10px 0 5px;
+}
+
+section {
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.skills li {
+    display: inline-flexbox;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    font-size: 18px;
+    border-radius: 10px;
+    text-align: center;
+    width: 150;
+    box-sizing: border-box;
+}
+.python {
+    background-color: #306998;
+}
+.c {
+    background-color: #f34b7d;
+}
+.html {
+    background-color: #e34c26;
+}
+.css {
+    background-color: #264de4;
+}
+.conduite automobile {
+    background-color: #d8d81e;
+}
+.cuisine {
+    background-color: #333;
+}
+.regie  {
+    background-color: #306998;
+}
+
+.contact-card {
+    background-color: #f1f5f9;
+    padding: 40px 20px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card h2 {
+    text-align: center;
+    margin-bottom: 20px;
+   color: #1e3a5f;
+  }
+      
+footer {
+    text-align: center;
+    background-color: #1e3a5f;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}

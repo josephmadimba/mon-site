@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conctact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="conctact-form">
+        <h2>Contactez-nous</h2>
+        <form id="contactForm">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+            <label for="num">Tél :</label>
+            <input type="number" id="numero" name="number" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Envoyer</button>
+             <!-- <a href="mi.html">Envoyer</a> -->
+        </form>
+    </div>
+    <script>
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function(event){
+            event.preventDefault(); // empêche l'envoi normal
+            
+            if (form.checkValidity()) {
+                window.location.href = "mi.html"; // redirection si tous les champs sont valides
+            } else {
+                alert("veuillez remplir tous les champs.");
+            }
+        });
+    </script>
+
+</body>
+</html>
