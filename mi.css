@@ -3,7 +3,7 @@ body{
     padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     height: 100vh;
-    background-image: url(modern-stationary-collection-arrangement.jpg);
+    background-image: url(images/modern-stationary-collection-arrangement.jpg);
     background-size: cover;
     background-position: center;
     animation: zoomBg 20s infinite alternate;
